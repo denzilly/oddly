@@ -12,3 +12,18 @@ def get_xpaths(row):
 
 
     return xpaths
+
+
+
+def p_xpaths(item):
+    xpaths = {
+    "country" : f"/html/body/page-container/div/main/div/competition-page/div/div[2]/div/div[1]/div/outright-coupon/div/outright-coupon-card-items/div[1]/abc-card/div/div/abc-card-content/abc-accordion/div/section/outright-item-grid-list/div/outright-item[{item}]/div/div[1]/p",
+    "odds" : f"/html/body/page-container/div/main/div/competition-page/div/div[2]/div/div[1]/div/outright-coupon/div/outright-coupon-card-items/div[1]/abc-card/div/div/abc-card-content/abc-accordion/div/section/outright-item-grid-list/div/outright-item[{item}]/div/div[2]/abc-btn-odds/abc-button/div/div[2]/ng-transclude/span",
+    "showall" : "/html/body/page-container/div/main/div/competition-page/div/div[2]/div/div[1]/div/outright-coupon/div/outright-coupon-card-items/div[1]/abc-card/div/div/abc-card-content/abc-accordion/div/section/outright-item-grid-list/abc-link/a/span",
+    "cookies" : '//*[@id="onetrust-accept-btn-handler"]'
+    }
+
+    return xpaths
+
+
+    
