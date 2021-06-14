@@ -6,14 +6,14 @@ import os
 
 
 
-def db_connect():
+def db_connect(db):
 
     config = ConfigParser()
     config.read(f'{os.getcwd()}\modules\config.ini')
 
     try:
         connection = mysql.connector.connect(host=config.get('main','server'),
-                                            database=config.get('main','db'),
+                                            database=db,
                                             user=config.get('main','user'),
                                             password=config.get('main','pass')
         )

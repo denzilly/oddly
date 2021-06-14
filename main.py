@@ -1,9 +1,7 @@
 
-import os
-import pandas
 import time
 import datetime
-import sqlite3
+
 from configparser import ConfigParser
 
 
@@ -21,7 +19,7 @@ from selenium.webdriver.firefox.options import Options
 
 
 #connect to the database
-connection = db_connect()
+connection = db_connect("odds_DB")
 cursor = connection.cursor()
 
 
