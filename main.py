@@ -1,13 +1,16 @@
-import pystore
+
 import os
 import pandas
 import time
 import datetime
-
 import sqlite3
+from configparser import ConfigParser
+
 
 
 from xpaths import *
+from modules.helpers import *
+from modules.db_logic import *
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -16,16 +19,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.firefox.options import Options
 
 
-### connect to the DB
-try:
-    connection = sqlite3.connect(os.getcwd()+'\data\odds_DB.db')
-    cursor = connection.cursor()
-    now = datetime.datetime.now()
-    sqlite_select_Query = "select sqlite_version();"
+
+#connect to the database
+connection = db_connect()
+cursor = connection.cursor()
 
 
-except sqlite3.Error as error:
-    print("Error while connecting to sqlite", error)
+
 
 
 
@@ -33,7 +33,7 @@ options=Options()
 options.headless = True
 
 
-driver = webdriver.Firefox(options=options)
+driver = webdriver.Firefox(options=options,executable_path=identify_os())
 driver.get("https://www.paddypower.com/football/uefa-euro-2020?tab=outrights")
 
 driver.execute_script("window.scrollTo(0, 500)")
@@ -43,51 +43,53 @@ WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, p_xpat
 
 while True:
     
-
-    
     time.sleep(1)
+       
     WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, p_xpaths("none")["showall"]))).click()
     
-    
+
 
 
     nr = {time : datetime.datetime.now()}
     for x in range(1,25):
         country = driver.find_element_by_xpath(p_xpaths(str(x))["country"]).get_attribute("innerHTML").upper().replace(" ","_")
         try:
-            odds = driver.find_element_by_xpath(p_xpaths(str(x))["odds"]).get_attribute("innerHTML")
+            odds = float(eval(driver.find_element_by_xpath(p_xpaths(str(x))["odds"]).get_attribute("innerHTML")))
         except:
             odds = 0
         nr[country] = odds
 
+    values = [value for key,value in nr.items()][1:]
+
+
 
     #push the data to the DB
+    if  sum(values) != 0:
+        cursor.execute("""SELECT *
+                                FROM ODDS_DATA
+                                ORDER BY id DESC
+                                LIMIT 1"""
+                                )
+        try:
+            new_id = cursor.fetchall()[0][0] + 1
+        except IndexError:
+            new_id = 1
 
-    cursor.execute("""SELECT *
-                            FROM ODDS_DATA
-                            ORDER BY id DESC
-                            LIMIT 1"""
-                            )
-    try:
-        new_id = cursor.fetchall()[0][0] + 1
-    except IndexError:
-        new_id = 1
-
-    now = datetime.datetime.now()
-    insert = f""" INSERT INTO ODDS_DATA(id,time,FRANCE,GERMANY,ENGLAND,BELGIUM,SPAIN,ITALY,PORTUGAL,
-                    NETHERLANDS,CROATIA,SWITZERLAND,DENMARK,UKRAINE,SWEDEN,AUSTRIA,POLAND,TURKEY,CZECH_REPUBLIC,
-                    WALES,SCOTLAND,RUSSIA,FINLAND,NORTH_MACEDONIA,HUNGARY,SLOVAKIA) 
-                    VALUES({new_id},'{str(now)}','{nr["FRANCE"]}','{nr["GERMANY"]}','{nr["ENGLAND"]}','{nr["BELGIUM"]}',
-                    '{nr["SPAIN"]}','{nr["ITALY"]}','{nr["PORTUGAL"]}','{nr["NETHERLANDS"]}','{nr["CROATIA"]}','{nr["SWITZERLAND"]}',
-                    '{nr["DENMARK"]}','{nr["UKRAINE"]}','{nr["SWEDEN"]}','{nr["AUSTRIA"]}','{nr["POLAND"]}','{nr["TURKEY"]}','{nr["CZECH_REPUBLIC"]}',
-                    '{nr["WALES"]}','{nr["SCOTLAND"]}','{nr["RUSSIA"]}','{nr["FINLAND"]}','{nr["NORTH_MACEDONIA"]}','{nr["HUNGARY"]}','{nr["SLOVAKIA"]}'
-    )"""
+        now = datetime.datetime.now()
+        insert = f""" INSERT INTO ODDS_DATA(id,time,FRANCE,GERMANY,ENGLAND,BELGIUM,SPAIN,ITALY,PORTUGAL,
+                        NETHERLANDS,CROATIA,SWITZERLAND,DENMARK,UKRAINE,SWEDEN,AUSTRIA,POLAND,TURKEY,CZECH_REPUBLIC,
+                        WALES,SCOTLAND,RUSSIA,FINLAND,NORTH_MACEDONIA,HUNGARY,SLOVAKIA) 
+                        VALUES({new_id},'{str(now)}','{nr["FRANCE"]}','{nr["GERMANY"]}','{nr["ENGLAND"]}','{nr["BELGIUM"]}',
+                        '{nr["SPAIN"]}','{nr["ITALY"]}','{nr["PORTUGAL"]}','{nr["NETHERLANDS"]}','{nr["CROATIA"]}','{nr["SWITZERLAND"]}',
+                        '{nr["DENMARK"]}','{nr["UKRAINE"]}','{nr["SWEDEN"]}','{nr["AUSTRIA"]}','{nr["POLAND"]}','{nr["TURKEY"]}','{nr["CZECH_REPUBLIC"]}',
+                        '{nr["WALES"]}','{nr["SCOTLAND"]}','{nr["RUSSIA"]}','{nr["FINLAND"]}','{nr["NORTH_MACEDONIA"]}','{nr["HUNGARY"]}','{nr["SLOVAKIA"]}'
+        )"""
 
 
-    cursor.execute(insert)
-    connection.commit()
-    print("wrote data to DB")
-    
+        cursor.execute(insert)
+        connection.commit()
+        print("wrote data to DB")
+        time.sleep(10)
     driver.refresh()
 
 
