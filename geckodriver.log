@@ -12170,3 +12170,25 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1623822537649	Marionette	INFO	Listening on port 36831
 1623822537729	Marionette	WARN	TLS certificate errors will be ignored for this session
 1623822541357	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1623859823827	geckodriver	INFO	Listening on 127.0.0.1:6257
+1623859826864	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Bart\\AppData\\Local\\Temp\\rust_mozprofiledlrMnm"
+*** You are running in headless mode.
+1623859827315	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Bart\\AppData\\Local\\Temp\\rust_mozprofiledlrMnm\\search.json.mozlz4", (void 0)))
+1623859828536	Marionette	INFO	Listening on port 6266
+1623859828934	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=C762AF64F7391A91B09C850DD998EEA5?org_id=dw7omaxv&session_id=9584cd0b-5118-4f77-9efd-74abaf7af79e&nonce=c8cfe1b13c2890db&jb=3e302e2668736f773557696e6c67777124687b673d556966666f777125303231322462736a7535466b7265646778266a7b6a3d446b706d6e6f7a253a323839, line 467: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=C762AF64F7391A91B09C850DD998EEA5?org_id=dw7omaxv&session_id=9584cd0b-5118-4f77-9efd-74abaf7af79e&nonce=c8cfe1b13c2890db&jb=3e302e2668736f773557696e6c67777124687b673d556966666f777125303231322462736a7535466b7265646778266a7b6a3d446b706d6e6f7a253a323839, line 467: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=C762AF64F7391A91B09C850DD998EEA5?org_id=dw7omaxv&session_id=9584cd0b-5118-4f77-9efd-74abaf7af79e&nonce=c8cfe1b13c2890db&jb=3e302e2668736f773557696e6c67777124687b673d556966666f777125303231322462736a7535466b7265646778266a7b6a3d446b706d6e6f7a253a323839, line 467: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=C762AF64F7391A91B09C850DD998EEA5?org_id=dw7omaxv&session_id=9584cd0b-5118-4f77-9efd-74abaf7af79e&nonce=c8cfe1b13c2890db&jb=3e302e2668736f773557696e6c67777124687b673d556966666f777125303231322462736a7535466b7265646778266a7b6a3d446b706d6e6f7a253a323839, line 467: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1623859854351	geckodriver	INFO	Listening on 127.0.0.1:6390
+1623859857374	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Bart\\AppData\\Local\\Temp\\rust_mozprofile4DE4W6"
+1623859857675	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Bart\\AppData\\Local\\Temp\\rust_mozprofile4DE4W6\\search.json.mozlz4", (void 0)))
+1623859859260	Marionette	INFO	Listening on port 6398
+1623859859434	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623859882986	Marionette	INFO	Stopped listening on port 6391623859884394	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" 

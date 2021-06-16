@@ -28,13 +28,13 @@ cursor = connection.cursor()
 
 
 options=Options()
-options.headless = True
+options.headless = False
 
 
 driver = webdriver.Firefox(options=options,executable_path=identify_os())
 driver.get("https://www.paddypower.com/football/uefa-euro-2020?tab=outrights")
 
-driver.execute_script("window.scrollTo(0, 500)")
+
 time.sleep(3)
 try:
 	WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, p_xpaths("none")["cookies"]))).click()
@@ -45,7 +45,7 @@ while True:
     
     time.sleep(1)
        
-    driver.execute_script("return arguments[0].scrollIntoView();", driver.find_element_by_xpath(p_xpaths("none")["showall"]))
+    #driver.execute_script("return arguments[0].scrollIntoView();", driver.find_element_by_xpath(p_xpaths("none")["showall"]))
     time.sleep(1)
     WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, p_xpaths("none")["showall"]))).click()
     
