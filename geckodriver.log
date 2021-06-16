@@ -11942,4 +11942,231 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1623699704440	Marionette	WARN	TLS certificate errors will be ignored for this session
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://www.betmkt.com"
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://www.betmkt.com"
-[Parent 31220, IPC I/O Parent] WARNING: file /builds/worker1623699755369	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreg
+[Parent 31220, IPC I/O Parent] WARNING: file /builds/worker1623699755369	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreg1623701367237	geckodriver	INFO	Listening on 127.0.0.1:52725
+1623701782029	geckodriver	INFO	Listening on 127.0.0.1:47533
+1623701782035	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile44D9kx"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623701782408	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile44D9kx/search.json.mozlz4", (void 0)))
+1623701785847	Marionette	INFO	Listening on port 42097
+1623701785995	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=2B5880BE9AAAE7D66B34857D53BB9E28?org_id=dw7omaxv&session_id=225b2486-c2a5-4402-843b-97d23e3f4049&nonce=adbdbb432e5993f2&jb=3733262468736777354e6b6e7570266a736d3544696c77702e687360773d446b726566677a246a71603d4e6b7a67646f782d3230383b, line 245: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=2B5880BE9AAAE7D66B34857D53BB9E28?org_id=dw7omaxv&session_id=225b2486-c2a5-4402-843b-97d23e3f4049&nonce=adbdbb432e5993f2&jb=3733262468736777354e6b6e7570266a736d3544696c77702e687360773d446b726566677a246a71603d4e6b7a67646f782d3230383b, line 245: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=2B5880BE9AAAE7D66B34857D53BB9E28?org_id=dw7omaxv&session_id=225b2486-c2a5-4402-843b-97d23e3f4049&nonce=adbdbb432e5993f2&jb=3733262468736777354e6b6e7570266a736d3544696c77702e687360773d446b726566677a246a71603d4e6b7a67646f782d3230383b, line 245: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=2B5880BE9AAAE7D66B34857D53BB9E28?org_id=dw7omaxv&session_id=225b2486-c2a5-4402-843b-97d23e3f4049&nonce=adbdbb432e5993f2&jb=3733262468736777354e6b6e7570266a736d3544696c77702e687360773d446b726566677a246a71603d4e6b7a67646f782d3230383b, line 245: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=2B5880BE9AAAE7D66B34857D53BB9E28?org_id=dw7omaxv&session_id=225b2486-c2a5-4402-843b-97d23e3f4049&nonce=adbdbb432e5993f2&jb=3733262468736777354e6b6e7570266a736d3544696c77702e687360773d446b726566677a246a71603d4e6b7a67646f782d3230383b, line 245: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=2B5880BE9AAAE7D66B34857D53BB9E28?org_id=dw7omaxv&session_id=225b2486-c2a5-4402-843b-97d23e3f4049&nonce=adbdbb432e5993f2&jb=3733262468736777354e6b6e7570266a736d3544696c77702e687360773d446b726566677a246a71603d4e6b7a67646f782d3230383b, line 245: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=2B5880BE9AAAE7D66B34857D53BB9E28?org_id=dw7omaxv&session_id=225b2486-c2a5-4402-843b-97d23e3f4049&nonce=adbdbb432e5993f2&jb=3733262468736777354e6b6e7570266a736d3544696c77702e687360773d446b726566677a246a71603d4e6b7a67646f782d3230383b, line 245: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=2B5880BE9AAAE7D66B34857D53BB9E28?org_id=dw7omaxv&session_id=225b2486-c2a5-4402-843b-97d23e3f4049&nonce=adbdbb432e5993f2&jb=3733262468736777354e6b6e7570266a736d3544696c77702e687360773d446b726566677a246a71603d4e6b7a67646f782d3230383b, line 245: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1623701793647	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1623701837044	geckodriver	INFO	Listening on 127.0.0.1:54467
+1623701837049	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileS3Ef07"
+Error: no DISPLAY environment variable specified
+1623701850015	geckodriver	INFO	Listening on 127.0.0.1:57993
+1623701850022	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesLhM1z"
+Error: no DISPLAY environment variable specified
+1623701928577	geckodriver	INFO	Listening on 127.0.0.1:46047
+1623701928582	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUxt6WM"
+Error: no DISPLAY environment variable specified
+1623701976426	geckodriver	INFO	Listening on 127.0.0.1:43501
+1623701976431	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilee372fQ"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623701976794	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilee372fQ/search.json.mozlz4", (void 0)))
+1623701980203	Marionette	INFO	Listening on port 42977
+1623701980271	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623703732315	geckodriver	INFO	Listening on 127.0.0.1:42347
+1623703732322	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2f9WSp"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623703732696	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2f9WSp/search.json.mozlz4", (void 0)))
+1623703736434	Marionette	INFO	Listening on port 45395
+1623703736465	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623703740031	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1623703770009	geckodriver	INFO	Listening on 127.0.0.1:46041
+1623703770014	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDKBrI9"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623703770380	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDKBrI9/search.json.mozlz4", (void 0)))
+1623703773798	Marionette	INFO	Listening on port 42477
+1623703774042	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=A2B694B58EC81B77C8D22EB213429DF7?org_id=dw7omaxv&session_id=5036a348-1ba5-4fe9-95d6-b4550ae364c5&nonce=2589bdce6b485420&jb=353124246a716f7d354c6b6e7570266873673544696e7770246a7362753d466b7065646f78266871623f46617a65646f782d32323831, line 456: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=A2B694B58EC81B77C8D22EB213429DF7?org_id=dw7omaxv&session_id=5036a348-1ba5-4fe9-95d6-b4550ae364c5&nonce=2589bdce6b485420&jb=353124246a716f7d354c6b6e7570266873673544696e7770246a7362753d466b7065646f78266871623f46617a65646f782d32323831, line 456: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=A2B694B58EC81B77C8D22EB213429DF7?org_id=dw7omaxv&session_id=5036a348-1ba5-4fe9-95d6-b4550ae364c5&nonce=2589bdce6b485420&jb=353124246a716f7d354c6b6e7570266873673544696e7770246a7362753d466b7065646f78266871623f46617a65646f782d32323831, line 456: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=A2B694B58EC81B77C8D22EB213429DF7?org_id=dw7omaxv&session_id=5036a348-1ba5-4fe9-95d6-b4550ae364c5&nonce=2589bdce6b485420&jb=353124246a716f7d354c6b6e7570266873673544696e7770246a7362753d466b7065646f78266871623f46617a65646f782d32323831, line 456: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=A2B694B58EC81B77C8D22EB213429DF7?org_id=dw7omaxv&session_id=5036a348-1ba5-4fe9-95d6-b4550ae364c5&nonce=2589bdce6b485420&jb=353124246a716f7d354c6b6e7570266873673544696e7770246a7362753d466b7065646f78266871623f46617a65646f782d32323831, line 456: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=A2B694B58EC81B77C8D22EB213429DF7?org_id=dw7omaxv&session_id=5036a348-1ba5-4fe9-95d6-b4550ae364c5&nonce=2589bdce6b485420&jb=353124246a716f7d354c6b6e7570266873673544696e7770246a7362753d466b7065646f78266871623f46617a65646f782d32323831, line 456: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=A2B694B58EC81B77C8D22EB213429DF7?org_id=dw7omaxv&session_id=5036a348-1ba5-4fe9-95d6-b4550ae364c5&nonce=2589bdce6b485420&jb=353124246a716f7d354c6b6e7570266873673544696e7770246a7362753d466b7065646f78266871623f46617a65646f782d32323831, line 456: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=A2B694B58EC81B77C8D22EB213429DF7?org_id=dw7omaxv&session_id=5036a348-1ba5-4fe9-95d6-b4550ae364c5&nonce=2589bdce6b485420&jb=353124246a716f7d354c6b6e7570266873673544696e7770246a7362753d466b7065646f78266871623f46617a65646f782d32323831, line 456: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1623703780556	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1623703839129	geckodriver	INFO	Listening on 127.0.0.1:37983
+1623703839134	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile70JcCu"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623703839494	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile70JcCu/search.json.mozlz4", (void 0)))
+1623703842884	Marionette	INFO	Listening on port 40599
+1623703842975	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623703846535	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1623703892949	geckodriver	INFO	Listening on 127.0.0.1:52577
+1623703892953	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNY1OGq"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623703893332	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileNY1OGq/search.json.mozlz4", (void 0)))
+1623703896574	Marionette	INFO	Listening on port 34343
+1623703896878	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=37EF206DA34C9FD7CFD3D7695736869F?org_id=dw7omaxv&session_id=b63e7f38-5146-4d91-9666-d6ea9221fcbc&nonce=e52343255daa98c8&jb=3733242668716d7d354c696e7770266a7b6f35446b6c7770266873627d3f44697067646d7a246873603f44617a65666f7a2d32303039, line 156: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=37EF206DA34C9FD7CFD3D7695736869F?org_id=dw7omaxv&session_id=b63e7f38-5146-4d91-9666-d6ea9221fcbc&nonce=e52343255daa98c8&jb=3733242668716d7d354c696e7770266a7b6f35446b6c7770266873627d3f44697067646d7a246873603f44617a65666f7a2d32303039, line 156: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=37EF206DA34C9FD7CFD3D7695736869F?org_id=dw7omaxv&session_id=b63e7f38-5146-4d91-9666-d6ea9221fcbc&nonce=e52343255daa98c8&jb=3733242668716d7d354c696e7770266a7b6f35446b6c7770266873627d3f44697067646d7a246873603f44617a65666f7a2d32303039, line 156: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=37EF206DA34C9FD7CFD3D7695736869F?org_id=dw7omaxv&session_id=b63e7f38-5146-4d91-9666-d6ea9221fcbc&nonce=e52343255daa98c8&jb=3733242668716d7d354c696e7770266a7b6f35446b6c7770266873627d3f44697067646d7a246873603f44617a65666f7a2d32303039, line 156: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=37EF206DA34C9FD7CFD3D7695736869F?org_id=dw7omaxv&session_id=b63e7f38-5146-4d91-9666-d6ea9221fcbc&nonce=e52343255daa98c8&jb=3733242668716d7d354c696e7770266a7b6f35446b6c7770266873627d3f44697067646d7a246873603f44617a65666f7a2d32303039, line 156: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=37EF206DA34C9FD7CFD3D7695736869F?org_id=dw7omaxv&session_id=b63e7f38-5146-4d91-9666-d6ea9221fcbc&nonce=e52343255daa98c8&jb=3733242668716d7d354c696e7770266a7b6f35446b6c7770266873627d3f44697067646d7a246873603f44617a65666f7a2d32303039, line 156: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=37EF206DA34C9FD7CFD3D7695736869F?org_id=dw7omaxv&session_id=b63e7f38-5146-4d91-9666-d6ea9221fcbc&nonce=e52343255daa98c8&jb=3733242668716d7d354c696e7770266a7b6f35446b6c7770266873627d3f44697067646d7a246873603f44617a65666f7a2d32303039, line 156: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=37EF206DA34C9FD7CFD3D7695736869F?org_id=dw7omaxv&session_id=b63e7f38-5146-4d91-9666-d6ea9221fcbc&nonce=e52343255daa98c8&jb=3733242668716d7d354c696e7770266a7b6f35446b6c7770266873627d3f44697067646d7a246873603f44617a65666f7a2d32303039, line 156: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1623703944644	geckodriver	INFO	Listening on 127.0.0.1:56461
+1623703944650	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileWbUZhR"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623703945022	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWbUZhR/search.json.mozlz4", (void 0)))
+1623703948645	Marionette	INFO	Listening on port 41739
+1623703948693	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=5848C11337359099CE54090A1EFDF300?org_id=dw7omaxv&session_id=dca404d3-cbe9-4392-a400-7e2f92d13aff&nonce=fdeda155531da40b&jb=353326266a736f77354e6b6e7d7026687b6d354c696e7570246a71607d3f46697065646d78246a73623d466b7a67646f702d3232303b, line 294: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=5848C11337359099CE54090A1EFDF300?org_id=dw7omaxv&session_id=dca404d3-cbe9-4392-a400-7e2f92d13aff&nonce=fdeda155531da40b&jb=353326266a736f77354e6b6e7d7026687b6d354c696e7570246a71607d3f46697065646d78246a73623d466b7a67646f702d3232303b, line 294: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=5848C11337359099CE54090A1EFDF300?org_id=dw7omaxv&session_id=dca404d3-cbe9-4392-a400-7e2f92d13aff&nonce=fdeda155531da40b&jb=353326266a736f77354e6b6e7d7026687b6d354c696e7570246a71607d3f46697065646d78246a73623d466b7a67646f702d3232303b, line 294: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=5848C11337359099CE54090A1EFDF300?org_id=dw7omaxv&session_id=dca404d3-cbe9-4392-a400-7e2f92d13aff&nonce=fdeda155531da40b&jb=353326266a736f77354e6b6e7d7026687b6d354c696e7570246a71607d3f46697065646d78246a73623d466b7a67646f702d3232303b, line 294: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=5848C11337359099CE54090A1EFDF300?org_id=dw7omaxv&session_id=dca404d3-cbe9-4392-a400-7e2f92d13aff&nonce=fdeda155531da40b&jb=353326266a736f77354e6b6e7d7026687b6d354c696e7570246a71607d3f46697065646d78246a73623d466b7a67646f702d3232303b, line 294: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=5848C11337359099CE54090A1EFDF300?org_id=dw7omaxv&session_id=dca404d3-cbe9-4392-a400-7e2f92d13aff&nonce=fdeda155531da40b&jb=353326266a736f77354e6b6e7d7026687b6d354c696e7570246a71607d3f46697065646d78246a73623d466b7a67646f702d3232303b, line 294: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=5848C11337359099CE54090A1EFDF300?org_id=dw7omaxv&session_id=dca404d3-cbe9-4392-a400-7e2f92d13aff&nonce=fdeda155531da40b&jb=353326266a736f77354e6b6e7d7026687b6d354c696e7570246a71607d3f46697065646d78246a73623d466b7a67646f702d3232303b, line 294: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=5848C11337359099CE54090A1EFDF300?org_id=dw7omaxv&session_id=dca404d3-cbe9-4392-a400-7e2f92d13aff&nonce=fdeda155531da40b&jb=353326266a736f77354e6b6e7d7026687b6d354c696e7570246a71607d3f46697065646d78246a73623d466b7a67646f702d3232303b, line 294: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1623703978031	geckodriver	INFO	Listening on 127.0.0.1:37789
+1623703978038	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile1V5Xfl"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623703978407	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1V5Xfl/search.json.mozlz4", (void 0)))
+1623703982473	Marionette	INFO	Listening on port 40283
+1623703982572	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623703986104	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1623704145709	geckodriver	INFO	Listening on 127.0.0.1:40251
+1623704145715	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevxZDeU"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623704146080	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilevxZDeU/search.json.mozlz4", (void 0)))
+1623704149642	Marionette	INFO	Listening on port 40211
+1623704149751	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623704153354	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1623704406483	geckodriver	INFO	Listening on 127.0.0.1:54733
+1623704406487	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDaGGC1"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623704406855	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDaGGC1/search.json.mozlz4", (void 0)))
+1623704410317	Marionette	INFO	Listening on port 39989
+1623704410610	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=8D6EC0F65731A3B55A4C8CE621B74F04?org_id=dw7omaxv&session_id=b81bb25c-ac20-45b2-9b8c-3eb188b75ab2&nonce=a5053df2bf639436&jb=3739262468716f77354c6b6c7570266a716d35446b667770246a71627d35446b7265646d7a2e6a71603f466b7a65646d782d32303a3b, line 317: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=8D6EC0F65731A3B55A4C8CE621B74F04?org_id=dw7omaxv&session_id=b81bb25c-ac20-45b2-9b8c-3eb188b75ab2&nonce=a5053df2bf639436&jb=3739262468716f77354c6b6c7570266a716d35446b667770246a71627d35446b7265646d7a2e6a71603f466b7a65646d782d32303a3b, line 317: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=8D6EC0F65731A3B55A4C8CE621B74F04?org_id=dw7omaxv&session_id=b81bb25c-ac20-45b2-9b8c-3eb188b75ab2&nonce=a5053df2bf639436&jb=3739262468716f77354c6b6c7570266a716d35446b667770246a71627d35446b7265646d7a2e6a71603f466b7a65646d782d32303a3b, line 317: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=8D6EC0F65731A3B55A4C8CE621B74F04?org_id=dw7omaxv&session_id=b81bb25c-ac20-45b2-9b8c-3eb188b75ab2&nonce=a5053df2bf639436&jb=3739262468716f77354c6b6c7570266a716d35446b667770246a71627d35446b7265646d7a2e6a71603f466b7a65646d782d32303a3b, line 317: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=8D6EC0F65731A3B55A4C8CE621B74F04?org_id=dw7omaxv&session_id=b81bb25c-ac20-45b2-9b8c-3eb188b75ab2&nonce=a5053df2bf639436&jb=3739262468716f77354c6b6c7570266a716d35446b667770246a71627d35446b7265646d7a2e6a71603f466b7a65646d782d32303a3b, line 317: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=8D6EC0F65731A3B55A4C8CE621B74F04?org_id=dw7omaxv&session_id=b81bb25c-ac20-45b2-9b8c-3eb188b75ab2&nonce=a5053df2bf639436&jb=3739262468716f77354c6b6c7570266a716d35446b667770246a71627d35446b7265646d7a2e6a71603f466b7a65646d782d32303a3b, line 317: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=8D6EC0F65731A3B55A4C8CE621B74F04?org_id=dw7omaxv&session_id=b81bb25c-ac20-45b2-9b8c-3eb188b75ab2&nonce=a5053df2bf639436&jb=3739262468716f77354c6b6c7570266a716d35446b667770246a71627d35446b7265646d7a2e6a71603f466b7a65646d782d32303a3b, line 317: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://regstat.paddypower.com/fp/check.js;CIS3SID=8D6EC0F65731A3B55A4C8CE621B74F04?org_id=dw7omaxv&session_id=b81bb25c-ac20-45b2-9b8c-3eb188b75ab2&nonce=a5053df2bf639436&jb=3739262468716f77354c6b6c7570266a716d35446b667770246a71627d35446b7265646d7a2e6a71603f466b7a65646d782d32303a3b, line 317: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585). ()
+1623704749476	geckodriver	INFO	Listening on 127.0.0.1:59841
+1623704749482	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4qbMHq"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623704749856	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4qbMHq/search.json.mozlz4", (void 0)))
+1623704753110	Marionette	INFO	Listening on port 46759
+1623704753217	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623704756844	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1623704803238	geckodriver	INFO	Listening on 127.0.0.1:60073
+1623704803247	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegW7UAH"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623704803620	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegW7UAH/search.json.mozlz4", (void 0)))
+1623704807004	Marionette	INFO	Listening on port 45537
+1623704807308	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623704810849	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1623705305862	geckodriver	INFO	Listening on 127.0.0.1:58213
+1623705305868	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYC0uUk"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623705306236	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYC0uUk/search.json.mozlz4", (void 0)))
+1623705309567	Marionette	INFO	Listening on port 38995
+1623705309790	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623705314177	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: http://www.betmkt.com/js_r531/mkt.js, line 1: TypeError: this.getAt(...) is undefined
+JavaScript error: http://www.betmkt.com/js_r531/mkt.js, line 1: TypeError: this.getAt(...) is undefined
+1623822530551	geckodriver	INFO	Listening on 127.0.0.1:59429
+1623822531543	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletbsBb7"
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: Unable to open a connection to the X server
+[GFX1-]: glxtest: libEGL missing
+1623822533699	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletbsBb7/search.json.mozlz4", (void 0)))
+1623822537649	Marionette	INFO	Listening on port 36831
+1623822537729	Marionette	WARN	TLS certificate errors will be ignored for this session
+1623822541357	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.

@@ -28,13 +28,13 @@ cursor = connection.cursor()
 
 #read config
 config = ConfigParser()
-config.read(f'{os.getcwd()}\modules\config.ini')
+config.read(f'{os.getcwd()}/modules/config.ini')
 
 options=Options()
-options.headless = False
+options.headless = True
 
 
-driver = webdriver.Firefox(options=options,executable_path=identify_os())
+driver = webdriver.Firefox(options=options,executable_path="resources/geckodriver")
 driver.get("http://www.betmkt.com/login.html")
 
 
@@ -53,7 +53,7 @@ WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.XPATH, b_xpat
 while True:
     nr = {"time" : datetime.datetime.now()}
     count = 1
-    for x in [6,4,4,4,4,4,4,7,3]:
+    for x in [6,4,4,4,4,4,4,6,3]:
         for row in range(1,x+1):
             market = driver.find_element_by_xpath(b_xpaths(str(count), str(row))["market"]).get_attribute("innerHTML").upper().replace(" ","_").replace("@","")
             nr[market +"_BID"] = driver.find_element_by_xpath(b_xpaths(str(count), str(row))["bid"]).get_attribute("innerHTML")

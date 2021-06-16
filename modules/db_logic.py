@@ -9,7 +9,7 @@ import os
 def db_connect(db):
 
     config = ConfigParser()
-    config.read(f'{os.getcwd()}\modules\config.ini')
+    config.read(f'{os.getcwd()}/modules/config.ini')
 
     try:
         connection = mysql.connector.connect(host=config.get('main','server'),
