@@ -33,7 +33,7 @@ options.headless = True
 
 driver = webdriver.Firefox(options=options,executable_path=identify_os())
 driver.get("https://www.paddypower.com/football/uefa-euro-2020?tab=outrights")
-
+driver.set_window_size(1440, 900)
 
 time.sleep(3)
 try:
