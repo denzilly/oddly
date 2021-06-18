@@ -1,4 +1,3 @@
-
 import os
 import pandas
 import time
@@ -34,7 +33,7 @@ options=Options()
 options.headless = True
 
 
-driver = webdriver.Firefox(options=options,executable_path="resources/geckodriver")
+driver = webdriver.Firefox(options=options,executable_path=identify_os())
 driver.get("http://www.betmkt.com/login.html")
 
 

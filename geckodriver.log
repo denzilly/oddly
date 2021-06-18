@@ -17583,3 +17583,6 @@ JavaScript error: http://www.betmkt.com/js_r531/mkt.js, line 1: TypeError: this.
 JavaScript error: http://www.betmkt.com/js_r531/mkt.js, line 1: TypeError: this.getAt(...) is undefined
 JavaScript error: http://www.betmkt.com/js_r531/mkt.js, line 1: TypeError: this.getAt(...) is undefined
 JavaScript error: http://www.betmkt.com/js_r531/mkt.js, line 1: TypeError: this.getAt(...) is undefined
+1624011733680	geckodriver	INFO	Listening on 127.0.0.1:4515
+1624011736748	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\Bart\\AppData\\Local\\Temp\\rust_mozprofileqHQZWC"
+*** You are running in headless mode.
