@@ -8,8 +8,8 @@ def identify_os():
         path = f"{os.getcwd()}\\resources\\geckodriver.exe"
     elif "linux" in platform.system().lower():
         path = f"{os.getcwd()}/resources/geckodriver"
-        print(path)
-    else:
+
+	    else:
         print("unknown os")
     return path
 

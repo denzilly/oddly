@@ -1,4 +1,5 @@
 
+
 import time
 import datetime
 
@@ -28,7 +29,7 @@ cursor = connection.cursor()
 
 
 options=Options()
-options.headless = True
+options.headless = False
 
 
 driver = webdriver.Firefox(options=options,executable_path=identify_os())
