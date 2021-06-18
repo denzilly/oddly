@@ -33,3 +33,8 @@ def db_connect(db):
     return connection
 
 
+
+def db_close(connection):
+    
+    connection.close()
+    print("connection closed")
