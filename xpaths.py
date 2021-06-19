@@ -43,6 +43,15 @@ def b_xpaths(div,row):
 
 
 
+def country_list():
+    countries = ["Belgium","Italy","Russia","Poland","Ukraine","Spain","France","Turkey","England","Czech_Republic","Finland","Sweden","Croatia","Austria","Netherlands","Germany","Portugal","witzerland","Denmark","Wales","North_Macedonia","Hungary","Slovakia","Scotland"
+]
+
+    return countries
+
+
+
+
 def m_insert_q(nr,new_id,now):
 
     query = f"""

@@ -6,13 +6,19 @@ import os
 
 
 
-def db_connect(db):
+def db_connect(db, local=False):
 
     config = ConfigParser()
     config.read(f'{os.getcwd()}/modules/config.ini')
 
+    if local:
+        host = "192.168.1.4"
+    else:
+        host = config.get('main','server')
+
+
     try:
-        connection = mysql.connector.connect(host=config.get('main','server'),
+        connection = mysql.connector.connect(host=host,
                                             database=db,
                                             user=config.get('main','user'),
                                             password=config.get('main','pass')
