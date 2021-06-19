@@ -52,7 +52,7 @@ try:
     while True:
         nr = {"time" : datetime.datetime.now()}
         count = 1
-        for x in [6,4,4,4,4,4,4,6,3]:
+        for x in [6,4,4,4,4,4,4,4,3]:
             for row in range(1,x+1):
                 market = driver.find_element_by_xpath(b_xpaths(str(count), str(row))["market"]).get_attribute("innerHTML").upper().replace(" ","_").replace("@","")
                 nr[market +"_BID"] = driver.find_element_by_xpath(b_xpaths(str(count), str(row))["bid"]).get_attribute("innerHTML")
