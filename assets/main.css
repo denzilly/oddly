@@ -1,0 +1,87 @@
+.orders {
+  border-radius: 5px;
+  border: 4px solid #858484;
+  
+  vertical-align: bottom;
+
+  width:40px;
+  height:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+#titletext {
+  display: flex;
+  border-radius: 5px;
+  border: 4px solid #858484;
+  align-items:center;
+  justify-content: center;
+  padding: 12px;
+  width: 350px
+}
+
+.orders.left {
+    float: right;
+}
+
+.orders.right {
+    float: left;
+}
+
+.dropdown {
+    vertical-align: middle;
+    display : inline-block;
+
+}
+.tradecol{
+    display:flex;
+    align-items: center;   
+}
+.tradecol.left{
+    justify-content: right;
+}
+
+.tradecol.right{
+    justify-content: left;
+}
+
+.mr-1{
+    width:180px;
+}
+
+.tradebox {
+    height:100%;
+}
+
+.tradecard {
+    height:15%; 
+}
+
+.tradecardbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .innertradebox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.vert-country {
+
+  
+  letter-spacing: 0.15em;
+  font-size: 40px;
+}
+
+
+.button {
+    font-weight: bold;
+    font-size: 20px;
+
+}

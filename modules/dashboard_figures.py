@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import dash_html_components as html
 import dash_core_components as dcc
 import dash_bootstrap_components as dbc
-
+from modules.helpers import *
 
 def gen_lineplot(df,country1,country2):
 
@@ -14,18 +14,21 @@ def gen_lineplot(df,country1,country2):
     fig = make_subplots(rows=2, cols=1)
     fig.add_trace(go.Scatter(x=df['time'], y=df[f'{country1}_OFFER'],
                         mode='lines',
-                        name='lines'), row=1,col=1)
+                        line=dict(color='#00cc96')), row=1,col=1)
     fig.add_trace(go.Scatter(x=df['time'], y=df[f'{country1}_BID'],
                         mode='lines',
-                        name='lines'), row=1,col=1)
+                        line=dict(color='#ff5454')), row=1,col=1)
     fig.add_trace(go.Scatter(x=df['time'], y=df[f'{country2}_OFFER'],
                         mode='lines',
-                        name='lines'), row=2,col=1)
+                        line=dict(color='#00cc96')), row=2,col=1)
     fig.add_trace(go.Scatter(x=df['time'], y=df[f'{country2}_BID'],
                         mode='lines',
-                        name="lines"), row=2,col=1)
-                        
+                        line=dict(color='#ff5454')), row=2,col=1)
+               
+    
     fig.update_layout(
+    height=750,
+    showlegend=False,
     xaxis=dict(
         rangeselector=dict(
             buttons=list([
@@ -53,13 +56,19 @@ def gen_lineplot(df,country1,country2):
         rangeslider=dict(
             visible=False
         ),
-        type="date"
+        type="date",
+        
     ),
     template='plotly_dark',
-    plot_bgcolor= 'rgba(0, 0, 0, 0)',
+    plot_bgcolor= 'rgba(0,0,0,0)',
     paper_bgcolor= 'rgba(0, 0, 0, 0)',
-    )
     
+    )
+    fig.update_xaxes(showgrid=True, gridcolor='#222631', spikedash='dash', row=1,col=1)
+    fig.update_yaxes(showgrid=True, gridcolor='#222631', spikedash='dash', row=1,col=1)
+    fig.update_xaxes(showgrid=True, gridcolor='#222631', spikedash='dash', row=2,col=1)
+    fig.update_yaxes(showgrid=True, gridcolor='#222631', spikedash='dash', row=2,col=1)
+
     
     fig.add_annotation(x=1, y=df[f'{country1}_OFFER'].iloc[-1]*1.2,
                 xref='x domain',
@@ -114,8 +123,7 @@ def gen_lineplot(df,country1,country2):
 
 def create_dropdown(id):
     return html.Div([
-        dbc.Card(
-            dbc.CardBody([
+        
                 dcc.Dropdown(
             id=id,
             options=[
@@ -147,9 +155,8 @@ def create_dropdown(id):
             value='ITALY'
             )
 
-            ])
-        )
-    ],style={'width': '30%', 'display': 'inline-block'})
+            
+    ],style={'width': '100%', 'display': 'inline-block'})
 
 
 def draw_main_plots():
@@ -159,7 +166,7 @@ def draw_main_plots():
                 dcc.Graph(id="main_plots")
             ])
         )
-    ])
+    ], style={'margin':'1px'})
 
 
 def drawText(id):

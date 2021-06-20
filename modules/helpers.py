@@ -3,6 +3,10 @@ import os
 import pyarrow as pa
 import redis
 import pandas as pd
+import dash_core_components as dcc
+import dateutil
+import re
+import datetime
 
 def identify_os():
 
@@ -31,3 +35,50 @@ def loadFromRedis(r, alias):
         return pa.deserialize(data)
     except:
         return pd.DataFrame({'A' : []})
+
+
+def price_string(df, country, bo):
+    if bo == "bid":
+        temp  = df[f"{country}_BID"].iloc[-1]
+        return f"SELL @ {temp}"
+        
+
+    elif bo == "offer":
+        temp  = df[f"{country}_OFFER"].iloc[-1]
+        return f"BUY @ {temp}"
+    
+
+def country_code(country):
+    country_mapping = {"BELGIUM":"BEL",
+                        "ITALY":"ITA",
+                        "RUSSIA":"RUS",
+                        "POLAND":"POL",
+                        "UKRAINE":"UKR",
+                        "SPAIN":"SPA",
+                        "FRANCE":"FRA",
+                        "TURKEY":"TUR",
+                        "ENGLAND":"ENG",
+                        "CZECH_REPUBLIC":"CZK",
+                        "FINLAND":"FIN",
+                        "SWEDEN":"SWE",
+                        "CROATIA":"CRO",
+                        "AUSTRIA":"AUT",
+                        "NETHERLANDS":"NED",
+                        "GERMANY":"GER",
+                        "PORTUGAL":"POR",
+                        "SWITZERLAND":"SWI",
+                        "DENMARK":"DEN",
+                        "WALES":"WAL",
+                        "NORTH_MACEDONIA":"NOM",
+                        "HUNGARY":"HUN",
+                        "SLOVAKIA":"SLO",
+                        "SCOTLAND":"SCO",}
+
+
+    return country_mapping[country]
+
+
+
+
+
+    
