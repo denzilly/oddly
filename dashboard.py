@@ -168,7 +168,7 @@ app.layout = html.Div([
 def update_df(n_intervals):
     #load the data the first time, and store it in dcc store
     text = 'foo'
-    if n_intervals == 0 or n_intervals % 20 ==0:
+    if n_intervals == 0 or n_intervals % 300 ==0:
         connection_m_1.reconnect()
         df = pd.read_sql("""SELECT * FROM MARKET_DATA WHERE id > 30000 ORDER BY id ASC""", con=connection_m_1)
         
@@ -220,4 +220,4 @@ def update_df(country1, country2, n_intervals):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True,threaded=True)

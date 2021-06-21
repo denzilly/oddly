@@ -27,7 +27,7 @@ def storeInRedis(r, alias, df):
     df_compressed = pa.serialize(df).to_buffer().to_pybytes()
     res = r.set(alias,df_compressed)
     if res == True:
-        print(f'{alias} cached')
+        print(f'{alias} cached at {datetime.datetime.now()}')
 
 def loadFromRedis(r, alias):
     data = r.get(alias)
