@@ -36,12 +36,31 @@ def b_xpaths(div,row):
         "login" : "/html/body/div/div[3]/table/tbody/tr[4]/td[2]/button",
         "market" : f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[1]/div",
         "bid" : f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[4]/div/span",
-        "offer":f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[5]/div/span"
-    }
+        "offer":f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[5]/div/span",
+        "buy" : """//*[@id="ext-gen451"]""",
+        "sell" : """//*[@id="ext-gen450"]"""
+    
+   }
 
     return xpaths
 
 
+def country_coords():
+    coords = {
+            'ITALY':[2,1],'SWITZERLAND':[2,2],'TURKEY':[2,3],'WALES':[2,4],
+            'BELGIUM':[3,1],'DENMARK':[3,2],'FINLAND':[3,3],'RUSSIA':[3,4],
+            'AUSTRIA':[4,1],'NETHERLANDS':[4,2],'NORTH_MACEDONIA':[4,3],'UKRAINE':[4,4],
+            'CROATIA':[5,1],'CZECH_REPUBLIC':[5,2],'ENGLAND':[5,3],'SCOTLAND':[5,4],
+            'POLAND':[6,1],'SLOVAKIA':[6,2],'SPAIN':[6,3],'SWEDEN':[6,4],
+            'FRANCE':[7,1],'GERMANY':[7,2],'HUNGARY':[7,3],'PORTUGAL':[7,4]
+            }
+
+    return coords
+
+
+
+
+    
 
 def country_list():
     countries = ["Belgium","Italy","Russia","Poland","Ukraine","Spain","France","Turkey","England","Czech_Republic","Finland","Sweden","Croatia","Austria","Netherlands","Germany","Portugal","witzerland","Denmark","Wales","North_Macedonia","Hungary","Slovakia","Scotland"
