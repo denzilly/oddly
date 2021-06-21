@@ -1,8 +1,7 @@
 import mysql.connector
-from mysql.connector import Error
+from mysql.connector import errorcode
 from configparser import ConfigParser
 import os
-
 
 
 
@@ -35,8 +34,13 @@ def db_connect(db, local=False):
             print("You're connected to database: ", record)
             cursor.close()
 
-    except Error as e:
-        print("Error while connecting to MySQL", e)
+    except mysql.connector.Error as err:
+        if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
+            print("Something is wrong with your user name or password")
+        elif err.errno == errorcode.ER_BAD_DB_ERROR:
+            print("Database does not exist")
+        else:
+            print(err)
     
 
     return connection
@@ -47,3 +51,6 @@ def db_close(connection):
     
     connection.close()
     print("connection closed")
+
+
+db_connect("market_DB")

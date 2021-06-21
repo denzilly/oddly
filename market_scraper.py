@@ -4,8 +4,6 @@ import time
 import datetime
 from configparser import ConfigParser
 
-
-
 from xpaths import *
 from modules.helpers import *
 from modules.db_logic import *
