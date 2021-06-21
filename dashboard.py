@@ -19,8 +19,7 @@ import pyarrow as pa
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 
-connection_m_1 = db_connect("market_DB",local=True)
-connection_m_2 = db_connect("market_DB",local=True)
+connection = db_connect("market_DB",local=True)
 r = redis.Redis('localhost', charset="utf-8")
 #brain = Brain()
 
@@ -168,10 +167,10 @@ app.layout = html.Div([
 def update_df(n_intervals):
     #load the data the first time, and store it in dcc store
     text = 'foo'
-    if n_intervals == 0 or n_intervals % 300 ==0:
-        connection_m_1.reconnect()
-        df = pd.read_sql("""SELECT * FROM MARKET_DATA WHERE id > 30000 ORDER BY id ASC""", con=connection_m_1)
-        
+    if n_intervals == 0 or n_intervals % 20 ==0:
+        connection.reconnect()
+        df = pd.read_sql("""SELECT * FROM MARKET_DATA WHERE id > 30000 ORDER BY id ASC""", con=connection)
+        print("main DF updated")
         storeInRedis(r,'main_df',df)
     return text
 
@@ -198,10 +197,10 @@ def update_df(country1, country2, n_intervals):
         print("no data yet")
 
     else:
-        connection_m_2.reconnect()
+        connection.reconnect()
         df_main = loadFromRedis(r,'main_df')
         max_id = df_main['id'].iloc[-1]
-        df_new = pd.read_sql(f"""SELECT * FROM MARKET_DATA WHERE id > {max_id} ORDER BY id""", con=connection_m_2)
+        df_new = pd.read_sql(f"""SELECT * FROM MARKET_DATA WHERE id > {max_id} ORDER BY id""", con=connection)
         df_main = df_main.append(df_new, ignore_index=True)
         fig = gen_lineplot(df_main, country1, country2)
 
@@ -211,6 +210,7 @@ def update_df(country1, country2, n_intervals):
         c2_offer_px = price_string(df_main, country2, "offer")
         countrylabel1 = country_code(country1)
         countrylabel2 = country_code(country2)
+        print("updating small")
 
 
         recent_update = f"""Last update: {datetime.strptime(df_main['time'].iloc[-1], '%Y-%m-%d %H:%M:%S.%f').strftime("%b %d %Y %H:%M:%S")}"""
@@ -220,4 +220,4 @@ def update_df(country1, country2, n_intervals):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True,threaded=True)
+    app.run_server(debug=True)

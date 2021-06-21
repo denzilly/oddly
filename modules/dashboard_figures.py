@@ -163,7 +163,7 @@ def draw_main_plots():
     return html.Div([
         dbc.Card(
             dbc.CardBody([
-                dcc.Graph(id="main_plots", animate=True)
+                dcc.Graph(id="main_plots",animate=True)
             ])
         )
     ], style={'margin':'1px'})
