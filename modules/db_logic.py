@@ -21,7 +21,10 @@ def db_connect(db, local=False):
         connection = mysql.connector.connect(host=host,
                                             database=db,
                                             user=config.get('main','user'),
-                                            password=config.get('main','pass')
+                                            password=config.get('main','pass'),
+                                            # pool_name="bartpool",
+                                            # pool_size=3,
+                                            buffered=True
         )
         if connection.is_connected():
             db_Info = connection.get_server_info()
