@@ -37,10 +37,11 @@ def b_xpaths(div,row):
         "market" : f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[1]/div",
         "bid" : f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[4]/div/span",
         "offer":f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[5]/div/span",
-        "buy" : """//*[@id="ext-gen451"]""",
-        "sell" : """//*[@id="ext-gen450"]"""
-    
+        "buy" : """/html/body/div[18]/div[2]/div[1]/div/div/div/div/div[2]/div/div/div/div/div[3]/div/table[2]/tbody/tr[2]/td[2]""",
+        "sell" :"""/html/body/div[18]/div[2]/div[1]/div/div/div/div/div[2]/div/div/div/div/div[3]/div/table[1]/tbody/tr[2]/td[2]""",
+        "close": """/html/body/div[12]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[2]/table/tbody/tr/td[1]/table/tbody/tr/td[2]/table/tbody/tr[2]/td[2]/em"""
    }
+   
 
     return xpaths
 

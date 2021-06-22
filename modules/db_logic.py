@@ -22,8 +22,8 @@ def db_connect(db, local=False):
                                             database=db,
                                             user=config.get('main','user'),
                                             password=config.get('main','pass'),
-                                            # pool_name="bartpool",
-                                            # pool_size=3,
+                                            pool_name="bartpool",
+                                            pool_size=4,
                                             buffered=True
         )
         if connection.is_connected():
