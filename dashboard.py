@@ -25,7 +25,7 @@ import pyarrow as pa
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 
-connection = db_connect("market_DB",local=False)
+connection = db_connect("market_DB",local=True)
 r = redis.Redis('localhost', charset="utf-8")
 #brain = Brain()
 
@@ -206,8 +206,8 @@ def update_df(country1, country2, n_intervals):
         connection.reconnect()
         df_main = loadFromRedis(r,'main_df')
         max_id = df_main['id'].iloc[-1]
-        #df_new = pd.read_sql(f"""SELECT * FROM MARKET_DATA WHERE id > {max_id} ORDER BY id""", con=connection)
-        #df_main = df_main.append(df_new, ignore_index=True)
+        df_new = pd.read_sql(f"""SELECT * FROM MARKET_DATA WHERE id > {max_id} ORDER BY id""", con=connection)
+        df_main = df_main.append(df_new, ignore_index=True)
         fig = gen_lineplot(df_main, country1, country2)
 
         c1_bid_px = price_string(df_main, country1, "bid")
