@@ -37,8 +37,8 @@ def b_xpaths(div,row):
         "market" : f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[1]/div",
         "bid" : f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[4]/div/span",
         "offer":f"/html/body/div[3]/div/div/div/div[1]/div[1]/div[2]/div[1]/div/div/div/div/div/div/div/div[1]/div[2]/div/div[{div}]/div[2]/div[{row}]/table/tbody/tr/td[5]/div/span",
-        "buy" : """/html/body/div[18]/div[2]/div[1]/div/div/div/div/div[2]/div/div/div/div/div[3]/div/table[2]/tbody/tr[2]/td[2]""",
-        "sell" :"""/html/body/div[18]/div[2]/div[1]/div/div/div/div/div[2]/div/div/div/div/div[3]/div/table[1]/tbody/tr[2]/td[2]""",
+        "buy" : """/html/body/div[13]/div[2]/div[1]/div/div/div/div/div[2]/div/div/div/div/div[3]/div/table[2]/tbody/tr[2]/td[2]/em/button""",
+        "sell" :"""/html/body/div[12]/div[2]/div[1]/div/div/div/div/div[2]/div/div/div/div/div[3]/div/table[1]/tbody/tr[2]/td[2]/em/button""",
         "close": """/html/body/div[12]/div[2]/div[2]/div/div/div/div[1]/table/tbody/tr/td[2]/table/tbody/tr/td[1]/table/tbody/tr/td[2]/table/tbody/tr[2]/td[2]/em"""
    }
    
@@ -48,7 +48,7 @@ def b_xpaths(div,row):
 
 def country_coords():
     coords = {
-            'ITALY':[2,1],'SWITZERLAND':[2,2],'TURKEY':[2,3],'WALES':[2,4],
+            'ITALY':[2,1],'SWITZERLAND':[2,2],'WALES':[2,3],
             'BELGIUM':[3,1],'DENMARK':[3,2],'FINLAND':[3,3],'RUSSIA':[3,4],
             'AUSTRIA':[4,1],'NETHERLANDS':[4,2],'NORTH_MACEDONIA':[4,3],'UKRAINE':[4,4],
             'CROATIA':[5,1],'CZECH_REPUBLIC':[5,2],'ENGLAND':[5,3],'SCOTLAND':[5,4],

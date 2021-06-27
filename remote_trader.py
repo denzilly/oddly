@@ -34,7 +34,12 @@ time.sleep(3)
 
 print("trader ready")
 
+debug_mode = False
 
+if debug_mode == True:
+    print("LAUNCHING IN DEBUG MDOE")
+else:
+    print("*************LAUNCHING IN LIVE TRADING MODE*********")
 
 def trade(driver, direction, country):
     time.sleep(0.1)
@@ -51,27 +56,35 @@ def trade(driver, direction, country):
         if direction == "buy":
             try:
                 print(f"BUYING {country}")
-                
-                #LIVE CODE DO NOT UNCOMMENT
-                # driver.find_element_by_xpath(\
-                #     b_xpaths(str(country_coords()[country][0]),\
-                #     str(country_coords()[country][1]))["buy"]).click()
+
+                if debug_mode == False:
+                    #LIVE CODE DO NOT UNCOMMENT
+                    driver.find_element_by_xpath(\
+                        b_xpaths(str(country_coords()[country][0]),\
+                        str(country_coords()[country][1]))["buy"]).click()
+                    print("actually trading")
+
             except:
                 print("unable to buy")                   
 
         elif direction == "sell":
             try:
                 print(f"SELLING {country}")
-                #LIVE CODE DO NOT UNCOMMENT
-                # driver.find_element_by_xpath(\
-                #     b_xpaths(str(country_coords()[country][0]),\
-                #     str(country_coords()[country][1]))["sell"]).click()
+                if debug_mode == False:
+                    
+                    #LIVE CODE DO NOT UNCOMMENT
+                    driver.find_element_by_xpath(\
+                        b_xpaths(str(country_coords()[country][0]),\
+                        str(country_coords()[country][1]))["sell"]).click()
+
+                    print("actually trading")
             except:
-                print("unable to buy")                   
+                print("unable to sell")                   
 
 
     time.sleep(0.1)
     try:
+        time.sleep(0.3)
         driver.find_element_by_xpath(\
                     b_xpaths(str(country_coords()[country][0]),\
                     str(country_coords()[country][1]))["close"]).click()
@@ -82,35 +95,48 @@ def trade(driver, direction, country):
 
 
 
-buyc1 = "shift + ctrl + 2"
-sellc1 = "shift + ctrl + 1"
-
-buyc2 = "shift + ctrl + 4"
-sellc2 = "shift + ctrl + 3"
-
-country1 = "WALES"
-country2 = "FINLAND"
+#hotkey logic
 
 
+country1 = "ITALY"
+country2 = "AUSTRIA"
+
+c1_sell = "F19"
+c1_buy = "F20"
+c2_sell = "F16"
+c2_buy = "F17"
+arm = "F24"
+armed = False
+
+print(f"COUNTRY 1:{country1}")
+print(f"COUNTRY 2:{country2}")
 while True:
-    if keyboard.is_pressed(buyc1):
-        print("buyc1")
-        trade(driver, "buy",country1)
-        time.sleep(0.5)
-    elif keyboard.is_pressed(sellc1):
-        print("sellc1")
-        trade(driver, "sell",country1)
-        time.sleep(0.5)
-    elif keyboard.is_pressed(buyc2):
-        print("buyc2")
-        trade(driver, "buy",country2)
-        time.sleep(0.5)
-    elif keyboard.is_pressed(sellc2):
-        print("sellc2")
-        trade(driver, "sell",country2)
-        time.sleep(0.5)
+
+  if keyboard.is_pressed(arm):
+      if armed == False:
+        print("ARMED!")
+        armed = True
+        time.sleep(0.2)
+      else:
+        print("DISARMED!")
+        armed = False
+        time.sleep(0.2)
+
+  if armed == True:
+    if keyboard.is_pressed(c1_sell):
+      trade(driver, "sell", country1)
+      time.sleep(0.2)
+    elif keyboard.is_pressed(c1_buy):
+      trade(driver, "buy", country1)
+      time.sleep(0.2)
+    elif keyboard.is_pressed(c2_sell):
+      trade(driver, "sell", country2)
+      time.sleep(0.2)
+    elif keyboard.is_pressed(c2_buy):
+      trade(driver, "buy", country2)
+      time.sleep(0.2)
   
-    time.sleep(.01)
+  time.sleep(0.01)
 
 
 

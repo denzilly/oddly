@@ -24,9 +24,6 @@ cursor = connection.cursor()
 
 
 
-
-
-
 options=Options()
 options.headless = True
 
